@@ -4,7 +4,7 @@ class StoragesController < ApplicationController
   # GET /storages
   # GET /storages.json
   def index
-    @storages = Storage.all
+    @storages = Storage.where(["name LIKE ?","%#{params[:search]}"])
   end
 
   # GET /storages/1

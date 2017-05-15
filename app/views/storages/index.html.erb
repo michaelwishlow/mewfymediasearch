@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Storages</h1>
+<h1>Mewfy Media Storage</h1>
+
+    <%= form_tag storages_path, :method => 'get'  do %>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search" %>
+    <% end %>
 
 <table>
   <thead>
