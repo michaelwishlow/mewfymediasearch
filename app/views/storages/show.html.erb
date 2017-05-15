@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @storage.name %>
+</p>
+
+<p>
+  <strong>Japanesename:</strong>
+  <%= @storage.japanesename %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @storage.genre %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @storage.format %>
+</p>
+
+<p>
+  <strong>Resolution:</strong>
+  <%= @storage.resolution %>
+</p>
+
+<p>
+  <strong>Locationhdd:</strong>
+  <%= @storage.locationhdd %>
+</p>
+
+<%= link_to 'Edit', edit_storage_path(@storage) %> |
+<%= link_to 'Back', storages_path %>
